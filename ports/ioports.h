@@ -1,7 +1,7 @@
-#ifndef _IOPORTS_H_
+п»ї#ifndef _IOPORTS_H_
 #define _IOPORTS_H_
 //------------------------------------------------------------------------------
-/* Основные макросы */
+/* Р‘Р°Р·РѕРІС‹Рµ РјР°РєСЂРѕСЃС‹ */
 #define rP(sym,  num)     (((PIN##sym)&(1<<num))>>(num))
 #define rPA(sym, num)     ((PIN##sym)&(1<<num))
 #define sP(sym,  num)     do { (PORT##sym) |=   1 << (num);  } while(0)
@@ -10,7 +10,7 @@
 #define sDi(sym, num)     do { (DDR##sym)  &= ~(1 << (num)); } while(0)
 #define sDo(sym, num)     do { (DDR##sym)  |=   1 << (num);  } while(0)
 //------------------------------------------------------------------------------
-/* Обёртки над основными макросами */
+/* РћР±С‘СЂС‚РєРё РЅР°Рґ Р±Р°Р·РѕРІС‹РјРё РјР°РєСЂРѕСЃР°РјРё РґР»СЏ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ РІ РїСЂРѕРіСЂР°РјРјР°С… */
 #define readPin(x)               rP(x)
 #define readPinAbs(x)            rPA(x)
 #define readPinBuf(buf, x)       rPB(buf,  x)
