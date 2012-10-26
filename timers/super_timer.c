@@ -1,4 +1,4 @@
-﻿#include <avr/io.h>
+#include <avr/io.h>
 #include <util/atomic.h>
 #include <avr/interrupt.h>
 #include "super_timer.h"

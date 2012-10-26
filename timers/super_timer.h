@@ -1,4 +1,4 @@
-﻿#ifndef SUPER_TIMER_H_
+#ifndef SUPER_TIMER_H_
 #define SUPER_TIMER_H_
 //------------------------------------------------------------------------------
 typedef struct 

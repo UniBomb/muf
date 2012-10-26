@@ -1,4 +1,4 @@
-﻿#ifndef _HD44780_DECODE_h_
+#ifndef _HD44780_DECODE_h_
 #define _HD44780_DECODE_h_
 //------------------------------------------------------------------------------
 extern volatile char HD44780_table_code[] = 
